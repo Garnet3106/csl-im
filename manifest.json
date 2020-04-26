@@ -10,7 +10,8 @@
             "scripts/detector.js"
         ],
         "matches": [
-            "https://steamcommunity.com/sharedfiles/filedetails*"
+            "https://steamcommunity.com/sharedfiles/filedetails*",
+            "https://steamcommunity.com/workshop/filedetails*"
         ]
     }],
     "description": "サブスクライブ中のC:SLのワークショップアイテムを管理します。",
