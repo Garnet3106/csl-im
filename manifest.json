@@ -5,9 +5,13 @@
         "default_popup": "popup.html"
     },
     "content_scripts": [{
-        "js": ["scripts/jquery-3.5.0.js", "scripts/detector.js"],
-        "css": ["stylesheets/main.css"],
-        "matches": ["https://steamcommunity.com/sharedfiles/filedetails*"]
+        "js": [
+            "scripts/jquery-3.5.0.js",
+            "scripts/detector.js"
+        ],
+        "matches": [
+            "https://steamcommunity.com/sharedfiles/filedetails*"
+        ]
     }],
     "description": "サブスクライブ中のC:SLのワークショップアイテムを管理します。",
     "icons": {
