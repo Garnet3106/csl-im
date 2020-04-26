@@ -15,7 +15,8 @@
     "icons": {
         "16": "images/icons/logo/16.png",
         "128": "images/icons/logo/128.png",
-        "256": "images/icons/logo/256.png"
+        "256": "images/icons/logo/256.png",
+        "512": "images/icons/logo/512.png"
     },
     "manifest_version": 2,
     "name": "CSL Item Manager",
