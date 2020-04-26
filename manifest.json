@@ -1,0 +1,23 @@
+{
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icons/logo/19.png"
+        },
+        "default_title": "SCL-IMの管理画面を開く",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "js": ["scripts/jquery-3.5.0.js", "scripts/detector.js"],
+        "css": ["stylesheets/main.css"],
+        "matches": ["https://steamcommunity.com/sharedfiles/filedetails*"]
+    }],
+    "description": "サブスクライブ中のC:SLのワークショップアイテムを管理します。",
+    "icons": {
+        "16": "images/icons/logo/16.png",
+        "128": "images/icons/logo/128.png",
+        "256": "images/icons/logo/256.png"
+    },
+    "manifest_version": 2,
+    "name": "CSL Item Manager",
+    "version": "0.0.0"
+}
