@@ -32,6 +32,12 @@ class ItemManager {
 
         item.rating = $('.fileRatingDetails').children('img').eq(0).attr('src').match(".+/(.+?)\.[a-z]+([\?#;].*)?$")[1];
 
+        let requiredItemIDs = [];
+        $('#RequiredItems').children('a').each(function(i, elem) {
+            requiredItemIDs.push(elem.getAttribute('href').split('=').pop());
+        });
+        item.requiredItems = requiredItemIDs;
+
         let creatorIDs = [];
         $('.creatorsBlock').children('div').each(function(i, elem) {
             creatorIDs.push(elem.getElementsByClassName('friendBlockLinkOverlay')[0].getAttribute('href').split('/').pop());
@@ -63,6 +69,7 @@ class Item {
         this.owner = '';
         this.postedAt = '';
         this.rating = '';
+        this.requiredItems = [];
         this.tags = [];
         this.title = '';
         this.type = '';
