@@ -52,19 +52,19 @@ class ItemManager {
 
 class Item {
     constructor() {
-        this.id = '';
-        this.title = '';
-        this.description = '';
-        this.type = '';
-        this.tags = [];
-        this.rating = '';
-        this.owner = '';
         this.creators = [];
+        this.description = '';
         this.fileSize = '';
+        this.id = '';
+        this.isSubscribing = false;
+        this.owner = '';
         this.postedAt = '';
+        this.rating = '';
+        this.tags = [];
+        this.title = '';
+        this.type = '';
         this.updatedAt = '';
         this.updateCount = '';
-        this.isSubscribing = false;
     }
 }
 
