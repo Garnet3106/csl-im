@@ -32,9 +32,12 @@ class ItemManager {
 
         item.rating = $('.fileRatingDetails').children('img').eq(0).attr('src').match(".+/(.+?)\.[a-z]+([\?#;].*)?$")[1];
 
-        let creatorElems = $('.creatorsBlock').children('div');
-        item.owner = creatorElems[0];
-        item.creators = creatorElems;
+        let creatorIDs = [];
+        $('.creatorsBlock').children('div').each(function(i, elem) {
+            creatorIDs.push(elem.getElementsByClassName('friendBlockLinkOverlay')[0].getAttribute('href').split('/').pop());
+        });
+        item.owner = creatorIDs[0];
+        item.creators = creatorIDs;
 
         let detailContainer = $('.detailsStatsContainerRight').eq(0).children('.detailsStatRight');
         item.fileSize = detailContainer.eq(0).text().replace(' ', '');
